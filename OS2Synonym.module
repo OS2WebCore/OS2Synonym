@@ -58,7 +58,7 @@ function OS2Synonym_menu() {
   );
 
   $items['OS2Synonym_send_solr'] = array(
-      'title'            => 'OS2Synonym send to SOLR',
+      'title'            => 'OS2Synonym send to Solr',
       'description'      => '',
       'page callback'    => '_OS2Synonym_send_solr',
       'access arguments' => array('access content'),
@@ -135,7 +135,7 @@ function OS2Synonym_admin_form($form, &$form_state) {
   $form['OS2Synonym_import_url'] = array(
     '#type' => 'textfield',
     '#title' => t('The URL of the shared Solr synonyms text file'),
-    '#description' => t('The URL of the shared Solr synonyms text file. For example http://<servername>/OS2Synonym_download'),
+    '#description' => htmlspecialchars(t('The URL of the shared Solr synonyms text file. For example http://<servername>/OS2Synonym_download')),
     '#size' => 60,
     '#maxlength' => 255,
     '#required' => TRUE,
