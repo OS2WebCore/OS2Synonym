@@ -28,3 +28,8 @@ The modules userinterface is located at /OS2Synonym. Here new synonyms can be ma
 The button 'Send to Solr' will save the synonyms ot the defined synonyms file and trigger a Solr core reload via the URL defined in settings.
 
 Apache Solr can be setup to do either query time parsing or index time parsing of synonyms. Check Apache Solr's documentation for more information.
+
+Drupalize.me has released a training series on settings up Solr with Drupal: https://drupalize.me/videos/better-search-results-solr-and-drupal-7.
+The videos uses Search API as the search framework together with Search API Solr module for integration with Solr.
+
+One of the vidoes in the series is about the usage of synonyms in Solr: https://drupalize.me/videos/configure-synonyms-solr
